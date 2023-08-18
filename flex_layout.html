@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        body{
+            border: 2px solid tomato;
+            border-radius: 5px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .image-container{
+            display: flexs;
+        }
+        .image-container div{
+            width: 100%;
+        }
+        
+        .image-container img{
+            width: 100%;
+            
+        }
+        @media screen and (max-width: 576px) {
+            .image-container{
+                flex-direction: column-reverse;
+            }
+            .image-container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <h1>This is a Flex Layout</h1>
+   <div class="image-container">
+         <div>
+            <img src="images/food.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/tiger.jpg" alt="">
+        </div> 
+   </div>
+</body>
+</html>

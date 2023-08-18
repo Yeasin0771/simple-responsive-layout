@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            border: 2px solid tomato;
+        }
+        .image-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-around
+        }
+        .image-container img{
+            border: 2px;
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .image-container{
+               grid-template-columns:;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Grid Layout</h1>
+    <div class="image-container">
+        <div>
+            <img src="images/Flower 01.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rectangle 4.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rectangle 5.png" alt="">
+        </div>
+        <div>
+            <img src="images/food.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
